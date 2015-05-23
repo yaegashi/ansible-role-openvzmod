@@ -2,6 +2,8 @@
 
 This role contains openvz module to manage OpenVZ containers.
 
+Ansible Galaxy: [https://galaxy.ansible.com/list#/roles/3900](https://galaxy.ansible.com/list#/roles/3900)
+
 ## openvz Module
 
 ### Warning
