@@ -490,8 +490,8 @@ None.
       ram: 1G
       swap: 512M
       diskspace: 2G
-      hostname: foobar
-      name: foobar
+      hostname: vzguest
+      name: vzguest
       ipaddr:
       - 192.168.0.100
       - 192.168.0.101
