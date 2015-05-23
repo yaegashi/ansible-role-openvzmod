@@ -1,0 +1,21 @@
+---
+- hosts: vzhost
+  sudo: yes
+  roles:
+  - yaegashi.openvzmod
+  tasks:
+  - openvz:
+      ctid: 1000
+      state: started
+      ostemplate: ubuntu-14.04-x86_64-minimal
+      ram: 1G
+      swap: 512M
+      diskspace: 2G
+      hostname: foobar
+      name: foobar
+      ipaddr:
+      - 192.168.0.100
+      - 192.168.0.101
+      nameserver: 192.168.0.1
+      userpasswd: ansible:secret
+      description: Ubuntu trusty amd64 container
