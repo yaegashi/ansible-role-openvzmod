@@ -23,28 +23,28 @@ notes:
 options:
     applyconfig:
         description:
-        - Option passed to C(vzctl set --applyconfig).
+        - Parameter passed to C(vzctl set --applyconfig).
     avnumproc:
         description:
         - UBC parameter passed to C(vzctl set --avnumproc).
     capability:
         description:
-        - Option passed to C(vzctl set --capability).
+        - Parameter passed to C(vzctl set --capability).
     config:
         description:
-        - Option passed to C(vzctl create --config).
+        - Parameter passed to C(vzctl create --config).
     cpulimit:
         description:
-        - Option passed to C(vzctl set --cpulimit).
+        - Parameter passed to C(vzctl set --cpulimit).
     cpumask:
         description:
-        - Option passed to C(vzctl set --cpumask).
+        - Parameter passed to C(vzctl set --cpumask).
     cpus:
         description:
-        - Option passed to C(vzctl set --cpus).
+        - Parameter passed to C(vzctl set --cpus).
     cpuunits:
         description:
-        - Option passed to C(vzctl set --cpuunits).
+        - Parameter passed to C(vzctl set --cpuunits).
     ctid:
         description:
         - Container ID or name to manage.
@@ -54,7 +54,7 @@ options:
         - UBC parameter passed to C(vzctl set --dcachesize).
     description:
         description:
-        - Option passed to C(vzctl set --description).
+        - Parameter passed to C(vzctl set --description).
     dgramrcvbuf:
         description:
         - UBC parameter passed to C(vzctl set --dgramrcvbuf).
@@ -66,69 +66,69 @@ options:
         - Parameter passed to C(vzctl set --disabled).
     diskinodes:
         description:
-        - Option passed to C(vzctl set --diskinodes).
+        - Parameter passed to C(vzctl set --diskinodes).
     diskspace:
         description:
-        - Option passed to C(vzctl set --diskspace).
+        - Parameter passed to C(vzctl set --diskspace).
     features:
         description:
-        - Option passed to C(vzctl set --features).
+        - Parameter passed to C(vzctl set --features).
     hostname:
         description:
-        - Option passed to C(vzctl set --hostname).
+        - Parameter passed to C(vzctl set --hostname).
     iolimit:
         description:
-        - Option passed to C(vzctl set --iolimit).
+        - Parameter passed to C(vzctl set --iolimit).
     ioprio:
         description:
-        - Option passed to C(vzctl set --ioprio).
+        - Parameter passed to C(vzctl set --ioprio).
     iopslimit:
         description:
-        - Option passed to C(vzctl set --iopslimit).
+        - Parameter passed to C(vzctl set --iopslimit).
     ipadd:
         description:
-        - Option passed to C(vzctl set --ipadd).
+        - Parameter passed to C(vzctl set --ipadd).
     ipaddr:
         description:
         - IP address settings in the idempotent way.  Specify addresses in an array
             or a space delimited string.
     ipdel:
         description:
-        - Option passed to C(vzctl set --ipdel).
+        - Parameter passed to C(vzctl set --ipdel).
     iptables:
         description:
-        - Option passed to C(vzctl set --iptables).
+        - Parameter passed to C(vzctl set --iptables).
     kmemsize:
         description:
         - UBC parameter passed to C(vzctl set --kmemsize).
     layout:
         description:
-        - Option passed to C(vzctl create --layout).
+        - Parameter passed to C(vzctl create --layout).
     lockedpages:
         description:
         - UBC parameter passed to C(vzctl set --lockedpages).
     mount_opts:
         description:
-        - Option passed to C(vzctl set --mount_opts).
+        - Parameter passed to C(vzctl set --mount_opts).
     name:
         description:
-        - Option passed to C(vzctl set --name).
+        - Parameter passed to C(vzctl set --name).
     nameserver:
         description:
-        - Option passed to C(vzctl set --nameserver).
+        - Parameter passed to C(vzctl set --nameserver).
     netif:
         description:
         - Network interface settings in the idempotent way.  Specify interfaces in
             an array or a space delimited string.
     netif_add:
         description:
-        - Option passed to C(vzctl set --netif_add).
+        - Parameter passed to C(vzctl set --netif_add).
     netif_del:
         description:
-        - Option passed to C(vzctl set --netif_del).
+        - Parameter passed to C(vzctl set --netif_del).
     nodemask:
         description:
-        - Option passed to C(vzctl set --nodemask).
+        - Parameter passed to C(vzctl set --nodemask).
     numfile:
         description:
         - UBC parameter passed to C(vzctl set --numfile).
@@ -164,7 +164,7 @@ options:
         - UBC parameter passed to C(vzctl set --oomguarpages).
     ostemplate:
         description:
-        - Option passed to C(vzctl create --ostemplate).
+        - Parameter passed to C(vzctl create --ostemplate).
     othersockbuf:
         description:
         - UBC parameter passed to C(vzctl set --othersockbuf).
@@ -173,25 +173,25 @@ options:
         - UBC parameter passed to C(vzctl set --physpages).
     private:
         description:
-        - Option passed to C(vzctl create --private).
+        - Parameter passed to C(vzctl create --private).
     privvmpages:
         description:
         - UBC parameter passed to C(vzctl set --privvmpages).
     quotatime:
         description:
-        - Option passed to C(vzctl set --quotatime).
+        - Parameter passed to C(vzctl set --quotatime).
     quotaugidlimit:
         description:
-        - Option passed to C(vzctl set --quotaugidlimit).
+        - Parameter passed to C(vzctl set --quotaugidlimit).
     ram:
         description:
-        - Option passed to C(vzctl set --ram).
+        - Parameter passed to C(vzctl set --ram).
     root:
         description:
-        - Option passed to C(vzctl create --root).
+        - Parameter passed to C(vzctl create --root).
     searchdomain:
         description:
-        - Option passed to C(vzctl set --searchdomain).
+        - Parameter passed to C(vzctl set --searchdomain).
     shmpages:
         description:
         - UBC parameter passed to C(vzctl set --shmpages).
@@ -205,7 +205,7 @@ options:
         - Container target state.
     swap:
         description:
-        - Option passed to C(vzctl set --swap).
+        - Parameter passed to C(vzctl set --swap).
     swappages:
         description:
         - UBC parameter passed to C(vzctl set --swappages).
@@ -217,7 +217,7 @@ options:
         - UBC parameter passed to C(vzctl set --tcpsndbuf).
     userpasswd:
         description:
-        - Option passed to C(vzctl set --userpasswd).
+        - Parameter passed to C(vzctl set --userpasswd).
     vmguarpages:
         description:
         - UBC parameter passed to C(vzctl set --vmguarpages).
@@ -274,10 +274,10 @@ DIFF_PARAMS = set((
 def docupdate():
     options = {}
     options.update(dict([
-        (i, {'description': ['Option passed to C(vzctl create --%s).' % i]})
+        (i, {'description': ['Parameter passed to C(vzctl create --%s).' % i]})
         for i in CREATE_PARAMS]))
     options.update(dict([
-        (i, {'description': ['Option passed to C(vzctl set --%s).' % i]})
+        (i, {'description': ['Parameter passed to C(vzctl set --%s).' % i]})
         for i in SET_PARAMS]))
     options.update(dict([
         (i, {'description': ['UBC parameter passed to C(vzctl set --%s).' % i]})

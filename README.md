@@ -12,13 +12,13 @@ This module is still quite immature.  There are many missing features.
 Extra care is needed for production use to avoid any troubles.
 
 Please file bugs at
-[the GitHub issue tracker](https://github.com/yaegashi/ansible-role-openvz/issues).
+[the GitHub issue tracker](https://github.com/yaegashi/ansible-role-openvzmod/issues).
 
 ### Options
 
 If this section doesn't show nicely in Ansible Galaxy Page,
 please refer to equeivalent in
-[the GitHub page](https://github.com/yaegashi/ansible-role-openvz#options).
+[the GitHub page](https://github.com/yaegashi/ansible-role-openvzmod#options).
 
 > <table border=1 cellpadding=4>
 > <tr>
@@ -33,7 +33,7 @@ please refer to equeivalent in
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --applyconfig</code>.</td>
+> <td>Parameter passed to <code>vzctl set --applyconfig</code>.</td>
 > </tr>
 > <tr>
 > <td>avnumproc</td>
@@ -47,42 +47,42 @@ please refer to equeivalent in
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --capability</code>.</td>
+> <td>Parameter passed to <code>vzctl set --capability</code>.</td>
 > </tr>
 > <tr>
 > <td>config</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl create --config</code>.</td>
+> <td>Parameter passed to <code>vzctl create --config</code>.</td>
 > </tr>
 > <tr>
 > <td>cpulimit</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --cpulimit</code>.</td>
+> <td>Parameter passed to <code>vzctl set --cpulimit</code>.</td>
 > </tr>
 > <tr>
 > <td>cpumask</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --cpumask</code>.</td>
+> <td>Parameter passed to <code>vzctl set --cpumask</code>.</td>
 > </tr>
 > <tr>
 > <td>cpus</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --cpus</code>.</td>
+> <td>Parameter passed to <code>vzctl set --cpus</code>.</td>
 > </tr>
 > <tr>
 > <td>cpuunits</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --cpuunits</code>.</td>
+> <td>Parameter passed to <code>vzctl set --cpuunits</code>.</td>
 > </tr>
 > <tr>
 > <td>ctid</td>
@@ -103,7 +103,7 @@ please refer to equeivalent in
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --description</code>.</td>
+> <td>Parameter passed to <code>vzctl set --description</code>.</td>
 > </tr>
 > <tr>
 > <td>dgramrcvbuf</td>
@@ -124,56 +124,56 @@ please refer to equeivalent in
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --diskinodes</code>.</td>
+> <td>Parameter passed to <code>vzctl set --diskinodes</code>.</td>
 > </tr>
 > <tr>
 > <td>diskspace</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --diskspace</code>.</td>
+> <td>Parameter passed to <code>vzctl set --diskspace</code>.</td>
 > </tr>
 > <tr>
 > <td>features</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --features</code>.</td>
+> <td>Parameter passed to <code>vzctl set --features</code>.</td>
 > </tr>
 > <tr>
 > <td>hostname</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --hostname</code>.</td>
+> <td>Parameter passed to <code>vzctl set --hostname</code>.</td>
 > </tr>
 > <tr>
 > <td>iolimit</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --iolimit</code>.</td>
+> <td>Parameter passed to <code>vzctl set --iolimit</code>.</td>
 > </tr>
 > <tr>
 > <td>ioprio</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --ioprio</code>.</td>
+> <td>Parameter passed to <code>vzctl set --ioprio</code>.</td>
 > </tr>
 > <tr>
 > <td>iopslimit</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --iopslimit</code>.</td>
+> <td>Parameter passed to <code>vzctl set --iopslimit</code>.</td>
 > </tr>
 > <tr>
 > <td>ipadd</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --ipadd</code>.</td>
+> <td>Parameter passed to <code>vzctl set --ipadd</code>.</td>
 > </tr>
 > <tr>
 > <td>ipaddr</td>
@@ -187,14 +187,14 @@ please refer to equeivalent in
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --ipdel</code>.</td>
+> <td>Parameter passed to <code>vzctl set --ipdel</code>.</td>
 > </tr>
 > <tr>
 > <td>iptables</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --iptables</code>.</td>
+> <td>Parameter passed to <code>vzctl set --iptables</code>.</td>
 > </tr>
 > <tr>
 > <td>kmemsize</td>
@@ -208,7 +208,7 @@ please refer to equeivalent in
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl create --layout</code>.</td>
+> <td>Parameter passed to <code>vzctl create --layout</code>.</td>
 > </tr>
 > <tr>
 > <td>lockedpages</td>
@@ -222,21 +222,21 @@ please refer to equeivalent in
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --mount_opts</code>.</td>
+> <td>Parameter passed to <code>vzctl set --mount_opts</code>.</td>
 > </tr>
 > <tr>
 > <td>name</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --name</code>.</td>
+> <td>Parameter passed to <code>vzctl set --name</code>.</td>
 > </tr>
 > <tr>
 > <td>nameserver</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --nameserver</code>.</td>
+> <td>Parameter passed to <code>vzctl set --nameserver</code>.</td>
 > </tr>
 > <tr>
 > <td>netif</td>
@@ -250,21 +250,21 @@ please refer to equeivalent in
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --netif_add</code>.</td>
+> <td>Parameter passed to <code>vzctl set --netif_add</code>.</td>
 > </tr>
 > <tr>
 > <td>netif_del</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --netif_del</code>.</td>
+> <td>Parameter passed to <code>vzctl set --netif_del</code>.</td>
 > </tr>
 > <tr>
 > <td>nodemask</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --nodemask</code>.</td>
+> <td>Parameter passed to <code>vzctl set --nodemask</code>.</td>
 > </tr>
 > <tr>
 > <td>numfile</td>
@@ -341,7 +341,7 @@ please refer to equeivalent in
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl create --ostemplate</code>.</td>
+> <td>Parameter passed to <code>vzctl create --ostemplate</code>.</td>
 > </tr>
 > <tr>
 > <td>othersockbuf</td>
@@ -362,7 +362,7 @@ please refer to equeivalent in
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl create --private</code>.</td>
+> <td>Parameter passed to <code>vzctl create --private</code>.</td>
 > </tr>
 > <tr>
 > <td>privvmpages</td>
@@ -376,35 +376,35 @@ please refer to equeivalent in
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --quotatime</code>.</td>
+> <td>Parameter passed to <code>vzctl set --quotatime</code>.</td>
 > </tr>
 > <tr>
 > <td>quotaugidlimit</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --quotaugidlimit</code>.</td>
+> <td>Parameter passed to <code>vzctl set --quotaugidlimit</code>.</td>
 > </tr>
 > <tr>
 > <td>ram</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --ram</code>.</td>
+> <td>Parameter passed to <code>vzctl set --ram</code>.</td>
 > </tr>
 > <tr>
 > <td>root</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl create --root</code>.</td>
+> <td>Parameter passed to <code>vzctl create --root</code>.</td>
 > </tr>
 > <tr>
 > <td>searchdomain</td>
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --searchdomain</code>.</td>
+> <td>Parameter passed to <code>vzctl set --searchdomain</code>.</td>
 > </tr>
 > <tr>
 > <td>shmpages</td>
@@ -425,7 +425,7 @@ please refer to equeivalent in
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --swap</code>.</td>
+> <td>Parameter passed to <code>vzctl set --swap</code>.</td>
 > </tr>
 > <tr>
 > <td>swappages</td>
@@ -453,7 +453,7 @@ please refer to equeivalent in
 > <td>no</td>
 > <td></td>
 > <td><ul></ul></td>
-> <td>Option passed to <code>vzctl set --userpasswd</code>.</td>
+> <td>Parameter passed to <code>vzctl set --userpasswd</code>.</td>
 > </tr>
 > <tr>
 > <td>vmguarpages</td>
@@ -501,6 +501,13 @@ None.
       userpasswd: ansible:secret
       description: Ubuntu trusty amd64 container
 ```
+
+## TODO
+
+Some other ideas for possible OpenVZ container management modules:
+
+- openvz_exec ... Run commands in a running container
+- openvz_snapshot ... Manipulate ploop snapshots
 
 ## License
 
