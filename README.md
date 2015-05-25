@@ -1,24 +1,23 @@
 # Ansible Role: openvzmod
 
-This role contains openvz module to manage OpenVZ containers.
+This role contains 2 modules to manage OpenVZ containers:
 
-Ansible Galaxy: [https://galaxy.ansible.com/list#/roles/3900](https://galaxy.ansible.com/list#/roles/3900)
+- openvz: Manage OpenVZ containers
+- openvz_exec: Execute commands in the OpenVZ container
 
-## openvz Module
-
-### Warning
-
-This module is still quite immature.  There are many missing features.
-Extra care is needed for production use to avoid any troubles.
-
+These modules is still quite immature.  There are many missing features.
 Please file bugs at
 [the GitHub issue tracker](https://github.com/yaegashi/ansible-role-openvzmod/issues).
 
-### Options
+Ansible Galaxy: [https://galaxy.ansible.com/list#/roles/3900](https://galaxy.ansible.com/list#/roles/3900)
+
+## Module Options
+
+### openvz options
 
 If this section doesn't show nicely in Ansible Galaxy Page,
 please refer to equeivalent in
-[the GitHub page](https://github.com/yaegashi/ansible-role-openvzmod#options).
+[the GitHub page](https://github.com/yaegashi/ansible-role-openvzmod#openvz-options).
 
 > <table border=1 cellpadding=4>
 > <tr>
@@ -464,6 +463,36 @@ please refer to equeivalent in
 > </tr>
 > </table>
 
+### openvz_exec options
+
+If this section doesn't show nicely in Ansible Galaxy Page,
+please refer to equeivalent in
+[the GitHub page](https://github.com/yaegashi/ansible-role-openvzmod#openvz_exec-options).
+
+> <table border=1 cellpadding=4>
+> <tr>
+> <th class="head">parameter</th>
+> <th class="head">required</th>
+> <th class="head">default</th>
+> <th class="head">choices</th>
+> <th class="head">comments</th>
+> </tr>
+> <tr>
+> <td>ctid</td>
+> <td>yes</td>
+> <td></td>
+> <td><ul></ul></td>
+> <td>Container ID or name to execute commands.</td>
+> </tr>
+> <tr>
+> <td>exec</td>
+> <td>yes</td>
+> <td></td>
+> <td><ul></ul></td>
+> <td>Shell commands to execute in the container.</td>
+> </tr>
+> </table>
+
 ## Requirements
 
 None.
@@ -502,12 +531,28 @@ None.
       description: Ubuntu trusty amd64 container
 ```
 
+```yaml
+---
+- hosts: vzhost
+  sudo: yes
+  roles:
+  - yaegashi.openvzmod
+  tasks:
+  - openvz_exec:
+      ctid: 1000
+      exec: |
+        adduser --system --group --uid 999 ansible
+        adduser ansible sudo
+        echo ansible:secret | chpasswd
+```
+
 ## TODO
 
 Some other ideas for possible OpenVZ container management modules:
 
-- openvz_exec ... Run commands in a running container
-- openvz_snapshot ... Manipulate ploop snapshots
+- openvz_snapshot: Manipulate ploop snapshots
+- openvz_exec: Add support for executing a local script file
+- Connection plugin for vzctl exec
 
 ## License
 

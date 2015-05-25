@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: YAEGASHI Takeshi
-  description: Contains openvz module to manage OpenVZ containers
+  description: Contains modules to manage OpenVZ containers
   license: GPLv3+
   min_ansible_version: 1.2
   categories:
