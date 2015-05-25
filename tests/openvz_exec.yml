@@ -1,0 +1,12 @@
+---
+- hosts: vzhost
+  sudo: yes
+  roles:
+  - yaegashi.openvzmod
+  tasks:
+  - openvz_exec:
+      ctid: 1000
+      exec: |
+        adduser --system --group --uid 999 ansible
+        adduser ansible sudo
+        echo ansible:secret | chpasswd
